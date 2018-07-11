@@ -71,11 +71,19 @@ import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe0
 
 ## electron 安装卡死在node install.js
 
-配置 `.npmrc` | `.yarnrc`
+配置 `.npmrc`
 
 ```
 registry=https://registry.npm.taobao.org
 sass_binary_site=https://npm.taobao.org/mirrors/node-sass/
 phantomjs_cdnurl=http://npm.taobao.org/mirrors/phantomjs
 electron_mirror=http://npm.taobao.org/mirrors/electron/
+```
+
+配置 `.yarnrc`
+```
+registry "https://registry.npm.taobao.org"
+sass_binary_site "https://npm.taobao.org/mirrors/node-sass/"
+phantomjs_cdnurl "http://npm.taobao.org/mirrors/phantomjs"
+electron_mirror "http://npm.taobao.org/mirrors/electron/"
 ```
